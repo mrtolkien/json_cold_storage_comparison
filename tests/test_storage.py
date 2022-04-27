@@ -23,3 +23,15 @@ def test_read_diskcache():
     time = storage.read_diskcache()
 
     cache.set("read_diskcache", time)
+
+
+def test_create_mongo():
+    time = storage.dump_mongo()
+
+    cache.set("dump_mongo", time)
+
+
+def test_read_mongo():
+    time = storage.read_mongo()
+
+    cache.set("read_mongo", time)

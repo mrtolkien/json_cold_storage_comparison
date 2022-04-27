@@ -1,5 +1,4 @@
 import os
-import shutil
 import json
 
 import diskcache
@@ -10,7 +9,7 @@ import time
 cache = diskcache.FanoutCache("diskcache")
 
 
-def dump_diskcache() -> int:
+def dump_diskcache() -> float:
     # Emptying the cache first
     cache.clear()
 
@@ -27,7 +26,7 @@ def dump_diskcache() -> int:
     return end - start
 
 
-def read_diskcache() -> int:
+def read_diskcache() -> float:
     start = time.time()
 
     for file in os.listdir("raw"):
