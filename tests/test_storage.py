@@ -35,3 +35,15 @@ def test_read_mongo():
     time = storage.read_mongo()
 
     cache.set("read_mongo", time)
+
+
+def test_create_lzma():
+    time = storage.dump_lzma()
+
+    cache.set("dump_lzma", time)
+
+
+def test_read_lzma():
+    time = storage.read_lzma()
+
+    cache.set("read_lzma", time)

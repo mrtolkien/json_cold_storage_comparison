@@ -132,4 +132,4 @@ dmypy.json
 raw/
 diskcache/
 mongo/
-tar/
+lzma/
