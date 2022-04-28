@@ -130,7 +130,7 @@ dmypy.json
 
 # Raw dumps
 raw/
-diskcache/
+diskcache*/
 mongo/
 lzma/
 zstd*/

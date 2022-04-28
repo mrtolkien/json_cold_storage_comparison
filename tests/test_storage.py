@@ -58,4 +58,16 @@ def test_dump_zstd():
 def test_dump_zstd_dict():
     time = storage.dump_zstd_dict()
 
-    cache.set("dump_zstd", time)
+    cache.set("dump_zstd_dict", time)
+
+
+def test_dump_diskcache_zstd():
+    time = storage.dump_diskcache_zstd()
+
+    cache.set("dump_diskcache_zstd", time)
+
+
+def test_read_diskcache_zstd():
+    time = storage.read_diskcache_zstd()
+
+    cache.set("read_diskcache_zstd", time)
