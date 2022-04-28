@@ -47,3 +47,15 @@ def test_read_lzma():
     time = storage.read_lzma()
 
     cache.set("read_lzma", time)
+
+
+def test_dump_zstd():
+    time = storage.dump_zstd()
+
+    cache.set("dump_zstd", time)
+
+
+def test_dump_zstd_dict():
+    time = storage.dump_zstd_dict()
+
+    cache.set("dump_zstd", time)

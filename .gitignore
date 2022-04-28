@@ -133,3 +133,4 @@ raw/
 diskcache/
 mongo/
 lzma/
+zstd*/

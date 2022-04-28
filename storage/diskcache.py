@@ -6,7 +6,7 @@ import diskcache
 import time
 
 
-cache = diskcache.FanoutCache("diskcache")
+cache = diskcache.Cache("diskcache")
 
 
 def dump_diskcache() -> float:
